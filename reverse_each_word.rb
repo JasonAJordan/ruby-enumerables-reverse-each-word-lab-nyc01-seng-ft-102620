@@ -1,17 +1,10 @@
 def reverse_each_word(string)
   
   array = string.split(" ")
-  
+  newArray = []
   array.each{|word|
-    count = 0
-    newWord = ''
-    
-    while word.length > count do 
-      newWord.unshift(word[count])
-    end 
-    word = newWord
-  }
+    newArray.push(word.reverse)
+  end 
   
-  newString = array.join(" ")
 end 
   
